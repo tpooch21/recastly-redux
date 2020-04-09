@@ -1,14 +1,12 @@
 import Redux from 'redux';
 
-// Will determine what the current video is in the action object
-// Action object will look something like:
-//      { type: 'CHANGE_CURRENT_VIDEO', 
-//        currentVideo: {data}
-//      }
-// If type is CURRENT_VIDEO, will change state.currentVideo
-
-var currentVideoReducer = (state, action) => {
+var currentVideoReducer = (state = null, action) => {
   //TODO: define a reducer for the currentVideo field of our state.
+  if (action.type === 'CHANGE_VIDEO') {
+    return action.video;
+  }
+  return state;
 };
 
 export default currentVideoReducer;
+//x

@@ -10,14 +10,11 @@ var handleVideoSearch = (q) => {
 
     return searchYouTube({YOUTUBE_API_KEY, q}, (data) => {
 
+      dispatch(changeVideoList(data));
       dispatch(changeVideo(data[0]));
 
-      dispatch(changeVideoList(data));
-
     });
-  }
-
-
+  };
 
 };
 
