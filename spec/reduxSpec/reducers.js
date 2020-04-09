@@ -15,7 +15,7 @@ describe('reducers', function() {
       expect(currentVideoReducer.bind(this)).to.throw();
       expect(currentVideoReducer.bind(this, {
         videoList: [],
-        currentVideo: null
+        currentVideo: null //x
       })).to.throw();
     });
     it('should have a default state of "null"', function() {
