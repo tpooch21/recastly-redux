@@ -3,12 +3,11 @@ import currentVideo from './currentVideo.js';
 import videoList from './videoList.js';
 
 // name of states
-var rootReducer = () => {
-  // combineReducers({
-  //   currentVideo,
-  //   videoList
-  // });
-};
+var rootReducer = combineReducers({
+    currentVideo,
+    videoList
+});
+
 
 //TODO: define the root reducer for this app
 
@@ -20,9 +19,9 @@ export default rootReducer;
 
 // Return a new state object
 // For each property in state, we call that respective reducer, passing through (currentState, action) for each one
-// return { 
-//          videos: videoListReducer(state.videos, action) 
-//          currentVideo: currentVideoReducer(state.currentVideo, action) 
+// return {
+//          videos: videoListReducer(state.videos, action)
+//          currentVideo: currentVideoReducer(state.currentVideo, action)
 //        }
 //
 //
