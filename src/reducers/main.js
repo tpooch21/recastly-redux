@@ -11,3 +11,13 @@ var rootReducer = () => {};
 //  listed above.
 
 export default rootReducer;
+
+// Return a new state object
+// For each property in state, we call that respective reducer, passing through (currentState, action) for each one
+// return { 
+//          videos: videoListReducer(state.videos, action) 
+//          currentVideo: currentVideoReducer(state.currentVideo, action) 
+//        }
+//
+//
+//
