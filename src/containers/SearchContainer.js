@@ -2,7 +2,8 @@ import { connect } from 'react-redux';
 import Search from './../components/Search.js';
 import handleSearchChange from '../actions/search.js';
 
-let mapDispatchToProps = dispatch => {
+
+let mapDispatchToProps = (dispatch) => {
   return {
     handleSearchInputChange: (query) => dispatch(handleSearchChange(query))
   }
