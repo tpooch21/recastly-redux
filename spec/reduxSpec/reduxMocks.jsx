@@ -49,3 +49,5 @@ export var mockThunk = function(x) {
 export var mockStore = createStore(mockReducer, applyMiddleware(thunk));
 
 render(<div>You can't see me!</div>, document.getElementById('shadow-app'));
+
+//x
